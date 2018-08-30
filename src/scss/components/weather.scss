@@ -1,0 +1,47 @@
+.weather{
+  width: 35%;
+  height: 100%;
+
+  background: $primary-orange;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(120deg , $primary-pink, $primary-orange);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(120deg , $primary-pink, $primary-orange); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 50px;
+  box-sizing: border-box;
+
+  float: left;
+
+  p{
+    margin: 0;
+    color: #fff;
+    opacity: .75;
+  }
+
+  &__date{
+    font-size: 21px;
+    font-weight: 200;
+    padding-left: 10px;
+  }
+
+  &__temperature{
+    font-size: 100px;
+    font-weight: 100;
+  }
+
+  &__location{
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+
+  &__condition{
+    font-size: 20px;
+    font-weight: 100;
+    padding-left: 10px;
+  }
+}
+
+.bottom-container{
+  position: absolute;
+  bottom: 75px;
+}

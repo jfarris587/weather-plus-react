@@ -1,0 +1,38 @@
+.menu{
+  width: 65%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  float: left;
+
+  .location{
+    width: 33px;
+    float: left;
+    padding-top: 2px;
+    margin-left: 22px;
+
+    &:hover{
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    &:active{
+      transform: scale(0.9);
+    }
+  }
+
+  .details{
+    width: 100%;
+    padding: 10px 40px 40px 40px;
+    box-sizing: border-box;
+
+    h1{
+      color: #cdcdcd;
+      font-weight: 300;
+      font-size: 23px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #eee;
+    }
+  }
+}

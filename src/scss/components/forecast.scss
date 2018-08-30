@@ -1,0 +1,83 @@
+.forecast{
+  margin-top: 160px;
+
+  .options{
+    float: right;
+    font-size: 15px;
+    line-height: 39px;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: capitalize;
+
+    &-selected{
+      border-bottom: 2px solid $primary-pink;
+      color: $primary-pink;
+    }
+
+    &:hover{
+      border-bottom: 2px solid rgb(40, 206, 223);
+      color: rgb(40, 206, 223);
+    }
+  }
+
+  .days{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 8px;
+  }
+
+  .day{
+    &-date{
+      color: #cdcdcd;
+      float: left;
+      width: 100%;
+      margin: 0;
+      padding-bottom: 26px;
+    }
+
+    &-stat{
+      float: right;
+      font-size: 17px;
+      font-weight: 400;
+      color: $primary-pink;
+      line-height: 17px;
+      position: relative;
+
+      &-high, &-low{
+        &:after{
+          content: " \00b0";
+          color: #cdcdcd;
+        }
+      }
+
+      &-low{
+        color: $primary-orange;
+        margin-right: 10px;
+        opacity: .6;
+      }
+
+      &-condition{
+        color: $primary-orange;
+      }
+
+      &-wind, &-humidity{
+        .sup{
+          font-size: 13px;
+          font-style: normal;
+          line-height: 13px;
+          top: -4px;
+          position: relative;
+          color: #cdcdcd;
+
+
+          &:before{
+            content: " ";
+          }
+        }
+      }
+    }
+  }
+}

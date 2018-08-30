@@ -1,0 +1,66 @@
+$primary-pink: #f34c91;
+$primary-orange: #f78167;
+
+@import './components/form.scss';
+@import './components/weather.scss';
+@import './components/menu.scss';
+@import './components/statistics.scss';
+@import './components/forecast.scss';
+
+
+html{
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Exo 2', sans-serif;
+  background: #fff;
+}
+
+#root{
+  background: #fff;
+  width: 70%;
+  height: 600px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+@media(max-width: 1100px){
+  .weather{
+    width: 100%;
+  }
+}
+
+@media(max-width: 800px){
+  #root{
+    width: 95% !important;
+    height: 95% !important;
+  }
+}
+
+@media(max-width: 500px){
+  #root{
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0px !important;
+  }
+}
+
+@media(max-height:700px){
+  .statistics{
+    display: none;
+  }
+  .forecast{
+    margin: 0;
+  }
+}

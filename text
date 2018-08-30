@@ -1,0 +1,7 @@
+This is the first real "web app" that I've made which is interactive, dynamic, and uses an API, and implements something like location services. It was built using React and OpenWeather API. Since it's my first, feedback would be appreciated. I tried to architect the files in an organized way from the SASS to the React components.
+
+When developing, I didn't "pre-decide" what was going to be a component, and what not, let along whether they should have state or not. I decided as I went along. Basically as I was developing in a component, it got to a point where I said "there's a lot of HTML here and too much going on, lets break it up..." and I made changes to things as I learned...
+
+Would it be better to continue to add and improve on this? or move on to another project?
+
+Maybe if its poorly constructed then I should continue, or if I could do things differently as well.
