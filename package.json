@@ -2,7 +2,7 @@
   "name": "weather-app",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://github.com/jfarris587/weather-plus-react",
+  "homepage" : "https://jfarris587.github.io/weather-plus-react",
   "dependencies": {
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
@@ -13,8 +13,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "devDependencies": {
     "grunt": "^1.0.3",
